@@ -1,0 +1,59 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e4f6f0;
+}
+
+.game {
+  margin: auto;
+  text-align: center;
+  background-color: #ffa500;
+  border: 2px solid #1e2923;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  width: 420px;
+  height: 420px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+}
+
+input[type="button"] {
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  position: static;
+  margin-top: 10px;
+}
+
+/* Media query for screens with max width of 768px */
+@media only screen and (max-width: 768px) {
+  .container {
+    background-color: #fff;
+  }
+
+  .game {
+    width: 80%;
+    height: auto;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  input[type="button"] {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}
